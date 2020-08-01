@@ -67,6 +67,9 @@ body {
   transition: .5s ease;
   font-family: 'IBM Plex Mono', monospace; }
 
+a {
+  color: #66FF99; }
+
 .navBar___2zDhC {
   letter-spacing: 2px; }
 
