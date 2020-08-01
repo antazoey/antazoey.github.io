@@ -1,0 +1,160 @@
+.jumbotron___2Xxw_ {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2em;
+  background: black; }
+
+.title___1dGOo {
+  font-weight: bold; }
+
+.title-app-button___2b0dF {
+  background-color: black;
+  border: black;
+  color: white;
+  font-family: 'Caveat', cursive;
+  font-size: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0; }
+
+.app-button___2WIjH {
+  background-color: black;
+  border: black;
+  color: whitesmoke;
+  font-size: 0.84em;
+  cursor: pointer;
+  outline: 0;
+  text-decoration: none; }
+
+.app-button___2WIjH:hover {
+  color: transparent;
+  text-shadow: 0 -0.25em 0 #66FF99, 0 -0.25em 0 #66FF99, 0 -0.25em 0 #66FF99, 0 -0.25em 0 #66FF99; }
+
+.app-button-no-effect___1rOp- {
+  background-color: black;
+  border: black;
+  color: whitesmoke;
+  font-size: 0.84em;
+  cursor: pointer;
+  outline: 0; }
+
+body {
+  background-color: black; }
+
+.center___2Zkpe {
+  width: 50%;
+  margin: auto; }
+
+.hide___1cbGo {
+  opacity: 0; }
+
+.nerdFont___2qpBK {
+  font-family: 'IBM Plex Mono', monospace; }
+
+.juliya-red___1IAAd {
+  color: #990066; }
+
+.juliya-blue___3_Boa {
+  color: #66FF99; }
+
+.SharedText___2eoaR {
+  max-width: 1000px;
+  margin: auto;
+  display: block;
+  text-align: justify-all;
+  font-size: 1.125em;
+  color: whitesmoke;
+  transition: .5s ease;
+  font-family: 'IBM Plex Mono', monospace; }
+
+.navBar___2zDhC {
+  letter-spacing: 2px; }
+
+.navItem___3DeCG {
+  transition: .3s ease; }
+
+.About___2JDeu {
+  color: whitesmoke;
+  width: 50%; }
+
+.resumeButton___3bAM1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 9rem;
+  min-width: 7rem;
+  transition: 0.3s ease;
+  background-color: transparent;
+  color: #66FF99;
+  font-size: 78%;
+  border-color: #66FF99;
+  border-radius: 0.95rem;
+  margin-bottom: 1.24rem;
+  outline: 0; }
+
+.resumeButton___3bAM1:hover {
+  border-color: #990066;
+  color: #990066;
+  cursor: pointer; }
+
+.patchDay___32vIV {
+  position: relative;
+  display: block;
+  margin: auto;
+  transition: .5s ease; }
+
+.pdButton___2j3dM {
+  display: block;
+  margin: auto;
+  border-radius: 2em;
+  width: 128px;
+  height: 128px;
+  background-color: transparent;
+  border-color: transparent;
+  border-width: 0;
+  outline: 0;
+  cursor: pointer; }
+
+.pdImage___3dCbr {
+  display: block;
+  margin: auto;
+  width: 128px;
+  height: 128px;
+  border-radius: 2rem;
+  cursor: pointer;
+  outline: 0; }
+
+.pdButton___2j3dM:hover .pdImage___3dCbr {
+  opacity: 0.5; }
+
+.SoundScape___1wnO1 {
+  text-align: center;
+  width: 100%; }
+
+.Player___1leFh {
+  width: 500px;
+  height: 300px; }
+
+.Title___1ucbD {
+  color: whitesmoke; }
+
+.Yingthi___1r1mI {
+  padding-top: 4em;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto; }
+
+.Image___3rtEq {
+  width: 50%;
+  transform: translateX(50%); }
+
+.Title___1GjJp {
+  color: whitesmoke;
+  text-align: center; }
+
+.Art___1kRYo {
+  margin-bottom: 5rem; }
+
+
+/*# sourceMappingURL=main.css.map*/
