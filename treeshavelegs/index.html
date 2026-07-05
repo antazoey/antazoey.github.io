@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no"
+    />
     <title>Trees Have Legs</title>
     <style>
       html,
@@ -18,10 +21,78 @@
       canvas {
         image-rendering: pixelated;
       }
+
+      /* Slight CRT look + a beveled bezel around the whole screen. */
+      #crt-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 20;
+        pointer-events: none;
+      }
+      #crt-overlay .scan {
+        position: absolute;
+        inset: 0;
+        background: repeating-linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.1) 0,
+          rgba(0, 0, 0, 0.1) 1px,
+          rgba(0, 0, 0, 0) 1px,
+          rgba(0, 0, 0, 0) 3px
+        );
+        animation: crt-flicker 5s steps(60) infinite;
+      }
+      #crt-overlay .vignette {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse at center,
+          rgba(0, 0, 0, 0) 58%,
+          rgba(0, 0, 0, 0.42) 100%
+        );
+      }
+      #crt-overlay .bezel {
+        position: absolute;
+        /* Keep the frame clear of the notch / home indicator on device. */
+        inset: env(safe-area-inset-top, 0) env(safe-area-inset-right, 0)
+          env(safe-area-inset-bottom, 0) env(safe-area-inset-left, 0);
+        box-sizing: border-box;
+        border: 8px solid #17171b;
+        border-radius: 12px;
+        box-shadow:
+          inset 3px 3px 5px rgba(255, 255, 255, 0.1),
+          inset -3px -3px 6px rgba(0, 0, 0, 0.65),
+          inset 0 0 30px rgba(0, 0, 0, 0.45),
+          0 0 0 2px #000;
+      }
+      @keyframes crt-flicker {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        97% {
+          opacity: 1;
+        }
+        98% {
+          opacity: 0.82;
+        }
+        99% {
+          opacity: 1;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #crt-overlay .scan {
+          animation: none;
+        }
+      }
     </style>
-    <script type="module" crossorigin src="./assets/index-f3L07U-u.js"></script>
+    <script type="module" crossorigin src="./assets/index-Wel4DEn-.js"></script>
   </head>
   <body>
     <canvas id="game"></canvas>
+    <div id="crt-overlay">
+      <div class="scan"></div>
+      <div class="vignette"></div>
+      <div class="bezel"></div>
+    </div>
   </body>
 </html>
